@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>App Page</title>
   <meta charset="utf-8">
@@ -9,13 +10,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <script
-    src="https://kit.fontawesome.com/2828f7885a.js"
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
     integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
   <script src="/js/app-page.js"></script>
 </head>
+
 <body>
   <section class="bodyClass">
     <div class="columns is-multiline">
@@ -33,9 +33,12 @@
           </a>
         </div>
         <div class="navbar-menu">
-          <div class="navbar-start"><a class="navbar-item" href="#">About</a><a class="navbar-item"
-              href="#">Company</a><a class="navbar-item" href="#">Services</a><a class="navbar-item"
-              href="#">Testimonials</a></div>
+          <div class="navbar-start">
+            
+            <a class="navbar-item"href="/">Home</a>
+            <a class="navbar-item" href="pages/arduino.html">Arduino Info Doc</a>
+            <a class="navbar-item" href="pages/LearningResources.html">Learning Resources</a>
+            <a class="navbar-item" href="#">Testimonials</a></div>
         </div>
       </div>
     </nav>
@@ -45,223 +48,230 @@
         <div class="mb-6 pb-3 columns is-multiline">
           <div class="column is-12 is-6-desktop mx-auto has-text-centered">
             <div class="container">
-                <h2 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold has-text-white">Home Sphere</h2>
-                <p class="subtitle has-text-white mb-5">
-                    Home Sphere is an innovative application that brings together the power of Firebase, the versatility of the Ionic framework, and the precision of Arduino-based sensor data. It's designed to provide seamless home automation and real-time monitoring, enhancing the way you interact with your environment. Experience intuitive control and insightful data visualization at your fingertips.
-                </p>
+              <h2 class="mb-4 is-size-1 is-size-3-mobile has-text-weight-bold has-text-white">Home Sphere</h2>
+              <p class="subtitle has-text-white mb-5">
+                Home Sphere is an innovative application that brings together the power of Firebase, the versatility of
+                the Ionic framework, and the precision of Arduino-based sensor data. It's designed to provide seamless
+                home automation and real-time monitoring, enhancing the way you interact with your environment.
+                Experience intuitive control and insightful data visualization at your fingertips.
+              </p>
             </div>
-            
-        </div>
-        <div class="columns is-multiline">
-          <div class="column is-12 is-4-desktop">
-            <div class="mb-6 is-flex">
+
+          </div>
+          <div class="columns is-multiline">
+            <div class="column is-12 is-4-desktop">
+              <div class="mb-6 is-flex">
                 <div class="buttons is-centered" style="height: 140px; width: 140px;">
-                    <a class="mr-3" href="#">
-                      <img src="images/thermometerPngImage.png" alt=""></a>
-                  </div>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Temperature tracker</h4>
-                <p class="subtitle has-text-white">Monitor ambient temperature with precision. Ideal for ensuring comfortable living environments and managing heating systems efficiently.</p>
+                  <a class="mr-3" href="#">
+                    <img src="images/thermometerPngImage.png" alt=""></a>
+                </div>
+                <div class="ml-3">
+                  <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Temperature tracker</h4>
+                  <p class="subtitle has-text-white">Monitor ambient temperature with precision. Ideal for ensuring
+                    comfortable living environments and managing heating systems efficiently.</p>
+                </div>
+              </div>
+              <div class="mb-6 is-flex">
+                <div class="buttons is-centered" style="height: 140px; width: 140px;">
+                  <a class="mr-3" href="#">
+                    <img src="images/humidityPngImage.png" alt=""></a>
+                </div>
+                <div class="ml-3">
+                  <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Humidity tracker</h4>
+                  <p class="subtitle has-text-white">Keep track of humidity levels for optimal comfort and health.
+                    Essential for preventing mold growth and maintaining air quality.</p>
+                </div>
+              </div>
+              <div class="mb-6 is-flex">
+                <div class="buttons is-centered" style="height: 140px; width: 140px;">
+                  <a class="mr-3" href="#">
+                    <img src="images/moisturePngImage.png" alt=""></a>
+                </div>
+                <div class="ml-3">
+                  <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Moisture tracker</h4>
+                  <p class="subtitle has-text-white">Detect soil moisture levels for effective plant care or leak
+                    detection. A valuable tool for gardeners and homeowners alike.</p>
+                </div>
               </div>
             </div>
-            <div class="mb-6 is-flex">
-                <div class="buttons is-centered" style="height: 140px; width: 140px;">
-                    <a class="mr-3" href="#">
-                      <img src="images/humidityPngImage.png" alt=""></a>
-                  </div>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Humidity tracker</h4>
-                <p class="subtitle has-text-white">Keep track of humidity levels for optimal comfort and health. Essential for preventing mold growth and maintaining air quality.</p>
-              </div>
+            <div class="column is-4 is-block-desktop is-hidden-touch">
+              <img class="mx-auto mt-0-widescreen is-block image" src="images/appMainImage.png" alt="">
             </div>
-            <div class="mb-6 is-flex">
+            <div class="column is-12 is-4-desktop">
+              <div class="mb-6 is-flex">
                 <div class="buttons is-centered" style="height: 140px; width: 140px;">
-                    <a class="mr-3" href="#">
-                      <img src="images/moisturePngImage.png" alt=""></a>
-                  </div>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Moisture tracker</h4>
-                <p class="subtitle has-text-white">Detect soil moisture levels for effective plant care or leak detection. A valuable tool for gardeners and homeowners alike.</p>
+                  <a class="mr-3" href="#">
+                    <img src="images/pressurePngImage.png" alt=""></a>
+                </div>
+                <div class="ml-3">
+                  <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Pressure Tracker</h4>
+                  <p class="subtitle has-text-white">Measure atmospheric pressure for various applications, including
+                    weather forecasting and altitude monitoring.</p>
+                </div>
+              </div>
+              <div class="mb-6 is-flex">
+                <div class="buttons is-centered" style="height: 140px; width: 140px;">
+                  <a class="mr-3" href="#">
+                    <img src="images/security.png" alt=""></a>
+                </div>
+                <div class="ml-3">
+                  <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Pir Sensor Tracker</h4>
+                  <p class="subtitle has-text-white">Enhance security with passive infrared (PIR) motion detection.
+                    Ideal for automatic lighting, alarm systems, and occupancy sensing.</p>
+                </div>
+              </div>
+              <div class="mb-6 is-flex">
+                <div class="buttons is-centered" style="height: 140px; width: 140px;">
+                  <a class="mr-3" href="#">
+                    <img src="images/airQualityImage.png" alt=""></a>
+                </div>
+                <div class="ml-3">
+                  <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Air Quality Tracker</h4>
+                  <p class="subtitle has-text-white">Keep an eye on air pollutants and maintain healthy indoor air
+                    quality. Critical for comfort and reducing health risks.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="column is-4 is-block-desktop is-hidden-touch">
-            <img class="mx-auto mt-0-widescreen is-block image" src="images/appMainImage.png"
-              alt=""></div>
-          <div class="column is-12 is-4-desktop">
-            <div class="mb-6 is-flex">
-                <div class="buttons is-centered" style="height: 140px; width: 140px;">
-                    <a class="mr-3" href="#">
-                      <img src="images/pressurePngImage.png" alt=""></a>
-                  </div>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Pressure Tracker</h4>
-                <p class="subtitle has-text-white">Measure atmospheric pressure for various applications, including weather forecasting and altitude monitoring.</p>
-              </div>
-            </div>
-            <div class="mb-6 is-flex">
-                <div class="buttons is-centered" style="height: 140px; width: 140px;">
-                    <a class="mr-3" href="#">
-                      <img src="images/security.png" alt=""></a>
-                  </div>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Pir Sensor Tracker</h4>
-                <p class="subtitle has-text-white">Enhance security with passive infrared (PIR) motion detection. Ideal for automatic lighting, alarm systems, and occupancy sensing.</p>
-              </div>
-            </div>
-            <div class="mb-6 is-flex">
-                <div class="buttons is-centered" style="height: 140px; width: 140px;">
-                    <a class="mr-3" href="#">
-                      <img src="images/airQualityImage.png" alt=""></a>
-                  </div>
-              <div class="ml-3">
-                <h4 class="is-size-4 has-text-weight-bold mb-2 has-text-white">Air Quality Tracker</h4>
-                <p class="subtitle has-text-white">Keep an eye on air pollutants and maintain healthy indoor air quality. Critical for comfort and reducing health risks.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- Begin Main Content -->
     <div class="main-content">
-        <!-- Begin About Me Section -->
-        <div class="section-light about-me" id="about-me">
-          <div class="container">
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">About Me</h1>
-            </div>
-            <div class="columns is-multiline">
-              <div
-                class="column is-6 has-vertically-aligned-content"
-                data-aos="fade-right"
-              >
-                <p class="is-larger">
-                  &emsp;&emsp;<strong
-                    >Showcase is a modern, beautiful personal website template to
-                    showcase who you are, as well as projects you've worked on in
-                    the past.</strong
-                  >
-                </p>
-                <br />
-                <p>
-                  Showcase was built from the ground up with Bulma to be fast and
-                  responsive out of the box with all source files well documented
-                  for easy to customization. The Showcase template gives you a
-                  personal space to share what you are all about as a creative
-                  designer, developer, photographer, and more!
-                </p>
-                <br />
-                <div class="is-divider"></div>
-                <div class="columns about-links">
-                  <div class="column">
-                    <p class="heading">
-                      <strong>Give me a ring</strong>
-                    </p>
-                    <p class="subheading">
-                      123-456-7890
-                    </p>
-                  </div>
-                  <div class="column">
-                    <p class="heading">
-                      <strong>Email Me</strong>
-                    </p>
-                    <p class="subheading">
-                      hello@example.com
-                    </p>
-                  </div>
-                  <div class="column">
-                    <p class="heading">
-                      <strong>View my portfolio</strong>
-                    </p>
-                    <p class="subheading">
-                      example.com
-                    </p>
-                  </div>
+      <!-- Begin About Me Section -->
+      <div class="section-light about-me" id="about-me">
+        <div class="container">
+          <div class="column is-12 about-me">
+            <h1 class="title has-text-centered section-title">About Me</h1>
+          </div>
+          <div class="columns is-multiline">
+            <div class="column is-6 has-vertically-aligned-content" data-aos="fade-right">
+              <p class="is-larger">
+                &emsp;&emsp;<strong>Showcase is a modern, beautiful personal website template to
+                  showcase who you are, as well as projects you've worked on in
+                  the past.</strong>
+              </p>
+              <br />
+              <p>
+                Showcase was built from the ground up with Bulma to be fast and
+                responsive out of the box with all source files well documented
+                for easy to customization. The Showcase template gives you a
+                personal space to share what you are all about as a creative
+                designer, developer, photographer, and more!
+              </p>
+              <br />
+              <div class="is-divider"></div>
+              <div class="columns about-links">
+                <div class="column">
+                  <p class="heading">
+                    <strong>Give me a ring</strong>
+                  </p>
+                  <p class="subheading">
+                    123-456-7890
+                  </p>
+                </div>
+                <div class="column">
+                  <p class="heading">
+                    <strong>Email Me</strong>
+                  </p>
+                  <p class="subheading">
+                    hello@example.com
+                  </p>
+                </div>
+                <div class="column">
+                  <p class="heading">
+                    <strong>View my portfolio</strong>
+                  </p>
+                  <p class="subheading">
+                    example.com
+                  </p>
                 </div>
               </div>
-              <div class="column is-6 right-image " data-aos="fade-left">
-                <img
-                  class="is-rounded"
-                  src="https://picsum.photos/id/366/600/375"
-                  alt=""
-                />
+            </div>
+            <div class="column is-6 right-image " data-aos="fade-left">
+              <img class="is-rounded" src="https://picsum.photos/id/366/600/375" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-multiline is-mobile image-gallery">
+        <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/515.jpg"
+            alt="Description of Image 1"></div>
+        <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/514.jpg"
+            alt="Description of Image 2"></div>
+        <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/513.jpg"
+            alt="Description of Image 3"></div>
+        <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/512.jpg"
+            alt="Description of Image 4"></div>
+        <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/511.jpg"
+            alt="Description of Image 5"></div>
+      </div>
+
+
+      <section class="section has-background-primary">
+        <div class="container">
+          <div class="is-vcentered columns is-multiline">
+            <div class="column is-6 is-5-desktop mb-4">
+              <span class="has-text-white">Lorem ipsum</span>
+              <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold has-text-white">Lorem
+                ipsum dolor sit
+                amet consectutar</h2>
+              <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa
+                nibh,
+                pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
+            </div>
+            <div class="column is-5 ml-auto">
+              <div class="mx-auto box p-6 has-background-light has-text-centered">
+                <h4 class="is-size-5 mb-2 has-text-weight-bold">Join Our Mailing List!</h4>
+                <p class="has-text-white-dark mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <form action="#">
+                  <input class="input mb-3" type="email" placeholder="Type your e-mail"><button
+                    class="button is-primary is-fullwidth">Action</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="columns is-multiline is-mobile image-gallery">
-            <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/appMainImage.png" alt="Description of Image 1"></div>
-            <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/appMainImage.png" alt="Description of Image 2"></div>
-            <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/appMainImage.png" alt="Description of Image 3"></div>
-            <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/appMainImage.png" alt="Description of Image 4"></div>
-            <div class="column is-one-fifth-desktop is-half-mobile"><img src="images/appMainImage.png" alt="Description of Image 5"></div>
-        </div>
-        
-
-    <section class="section has-background-primary">
-      <div class="container">
-        <div class="is-vcentered columns is-multiline">
-          <div class="column is-6 is-5-desktop mb-4">
-            <span class="has-text-white">Lorem ipsum</span>
-            <h2 class="has-text-white mt-2 mb-3 is-size-1 is-size-3-mobile has-text-weight-bold has-text-white">Lorem ipsum dolor sit
-              amet consectutar</h2>
-            <p class="has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa nibh,
-              pulvinar vitae aliquet nec, accumsan aliquet orci.</p>
-          </div>
-          <div class="column is-5 ml-auto">
-            <div class="mx-auto box p-6 has-background-light has-text-centered">
-              <h4 class="is-size-5 mb-2 has-text-weight-bold">Join Our Mailing List!</h4>
-              <p class="has-text-white-dark mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <form action="#">
-                <input class="input mb-3" type="email" placeholder="Type your e-mail"><button
-                  class="button is-primary is-fullwidth">Action</button>
-              </form>
+      <footer class="section">
+        <div class="container">
+          <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+            <div class="mr-auto mb-2">
+              <a class="is-inline-block" href="#">
+                <img class="image" src="images/appLogo.png" alt="" width="96px"></a>
+            </div>
+            <div>
+              <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+                <li class="mr-4"><a class="button is-white" href="#">About</a></li>
+                <li class="mr-4"><a class="button is-white" href="#">Company</a></li>
+                <li class="mr-4"><a class="button is-white" href="#">Services</a></li>
+                <li><a class="button is-white" href="#">Testimonials</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <footer class="section">
-      <div class="container">
-        <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
-          <div class="mr-auto mb-2">
-            <a class="is-inline-block" href="#">
-              <img class="image" src="images/appLogo.png" alt="" width="96px"></a>
-          </div>
-          <div>
-            <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
-              <li class="mr-4"><a class="button is-white" href="#">About</a></li>
-              <li class="mr-4"><a class="button is-white" href="#">Company</a></li>
-              <li class="mr-4"><a class="button is-white" href="#">Services</a></li>
-              <li><a class="button is-white" href="#">Testimonials</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
-      <div class="container">
-        <div class="is-flex-tablet is-justify-content-between is-align-items-center">
-          <p>All rights reserved © My App 20XX</p>
-          <div class="py-2 is-hidden-tablet"></div>
-          <div class="ml-auto">
-            <a class="mr-4 is-inline-block" href="#">
-              <img src="../images/app-page/socials/facebook.svg" alt=""></a>
-            <a class="mr-4 is-inline-block" href="#">
-              <img src="../images/app-page/socials/twitter.svg" alt=""></a>
-            <a class="mr-4 is-inline-block" href="#">
-              <img src="../images/app-page/socials/github.svg" alt=""></a>
-            <a class="mr-4 is-inline-block" href="#">
-              <img src="../images/app-page/socials/instagram.svg" alt=""></a>
-            <a class="is-inline-block" href="#">
-              <img src="../images/app-page/socials/linkedin.svg" alt=""></a>
+        <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+        <div class="container">
+          <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+            <p>All rights reserved © My App 20XX</p>
+            <div class="py-2 is-hidden-tablet"></div>
+            <div class="ml-auto">
+              <a class="mr-4 is-inline-block" href="#">
+                <img src="../images/app-page/socials/facebook.svg" alt=""></a>
+              <a class="mr-4 is-inline-block" href="#">
+                <img src="../images/app-page/socials/twitter.svg" alt=""></a>
+              <a class="mr-4 is-inline-block" href="#">
+                <img src="../images/app-page/socials/github.svg" alt=""></a>
+              <a class="mr-4 is-inline-block" href="#">
+                <img src="../images/app-page/socials/instagram.svg" alt=""></a>
+              <a class="is-inline-block" href="#">
+                <img src="../images/app-page/socials/linkedin.svg" alt=""></a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </section>
 </body>
 

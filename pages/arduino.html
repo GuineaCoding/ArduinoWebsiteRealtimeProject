@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>App Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/arduino.css" />
+    <script src="https://kit.fontawesome.com/2828f7885a.js"
+        integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+        crossorigin="anonymous"></script>
+    <script src="/js/app-page.js"></script>
+</head>
+
+<body>
+    <section class="bodyClass">
+        <div class="columns is-multiline">
+        </div>
+        <nav class="navbar py-4">
+            <div class="container is-fluid">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#">
+                        <img class="image" src="../images/appLogo.png" alt="" width="96px">
+                    </a>
+                    <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+
+                        <a class="navbar-item"href="../index.html">Home</a>
+                        <a class="navbar-item" href="#">Services</a>
+                        <a class="navbar-item" href="#">Testimonials</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="container">
+                <h1 class="title has-text-white">Home Sphere</h1>
+
+
+                <h2 class="subtitle has-text-white">Introduction</h2>
+                <p>This project involves creating a Smart Environment Monitoring System using Arduino MKR IoT
+                    Carrier 2. The system is capable of sensing environmental parameters and sending the data to
+                    Firebase for storage and further analysis. It's an IoT project that exemplifies the integration
+                    of hardware sensors with cloud-based data management</p>
+
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2 class="has-text-white">Please be aware that the project consists of three parts:</h2>
+
+                    <ul class="has-text-white">
+                        <li>Part 1: Arduino code functionality</li>
+                        <li>Part 2: Firebase Database</li>
+                        <li>Part 3: Ionic app and can be accessed here: <a class="has-text-warning"
+                                href="https://github.com/GuineaCoding/ArduinoDevProject">https://github.com/GuineaCoding/ArduinoDevProject</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">Features</h2>
+                <div class="content has-text-white">
+                    <ul class="has-text-white">
+                        <li class="has-text-white"><strong class="has-text-danger">Real-time Environment Monitoring</strong>: Measures temperature, humidity, air
+                            pressure, and air quality (CO2 levels, VOCs).</li>
+                        <li><strong class="has-text-danger">Motion Detection</strong>: Utilizes PIR sensors for motion detection with custom
+                            alert systems.</li>
+                        <li><strong class="has-text-danger">Firebase Integration</strong>: Seamlessly sends sensor data to Firebase for
+                            real-time monitoring and analytics.</li>
+                        <li><strong class="has-text-danger">Gesture Control</strong>: Includes gesture recognition for interactive control.</li>
+                        <li><strong class="has-text-danger">OLED Display</strong>: Shows environmental data and system status on an integrated
+                            OLED display.</li>
+                        <li><strong class="has-text-danger">Holiday Mode</strong>: Special mode for enhanced security and alert systems during
+                            holidays.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">Main Requirements</h2>
+                <div class="content">
+                    <ul>
+                        <li>Arduino MKR IoT Carrier</li>
+                        <li>PIR Motion Sensor</li>
+                        <li>Various environmental sensors (included in the MKR IoT Carrier 2)</li>
+                        <li>Active Internet Connection</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">Project Dependencies</h2>
+                <div class="content">
+                    <ul>
+                        <li>Arduino IDE</li>
+                        <li>SPI.h</li>
+                        <li>WiFiNINA.h</li>
+                        <li>Firebase_Arduino_WiFiNINA.h</li>
+                        <li>Arduino_MKRIoTCarrier.h</li>
+                        <li>NTPClient.h</li>
+                        <li>TimeLib.h</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">Setup and Configuration</h2>
+                <div class="content">
+                    <ol>
+                        <li><strong class="has-text-danger">Hardware Setup</strong>: Connect all the sensors to the Arduino MKR IoT Carrier 2.
+                        </li>
+                        <li><strong class="has-text-danger">WiFi Configuration</strong>: Enter your WiFi credentials in <code>config.h</code>.
+                        </li>
+                        <li><strong class="has-text-danger">Firebase Setup</strong>: Create config.h file, create a Firebase project and obtain
+                            the database URL and secret key. Update these in <code>config.h</code>.</li>
+                        <li><strong class="has-text-danger">Arduino IDE Setup</strong>: Install the Arduino IDE and all required libraries.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">System Parameters</h2>
+                <div class="content">
+                    <p>The system involves sensors interfaced with the Arduino MKR IoT Carrier 2, which connects to the
+                        internet via WiFi. The data from sensors is sent to Firebase for storage and analysis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white" >Core Functions in the Project</h2>
+                <div class="content">
+                    <p>The code is structured into several key functions:</p>
+                    <ul>
+                        <li><code>setup()</code>: Initializes the hardware and network connections.</li>
+                        <li><code>sendDataToFirebase()</code>: Gathers sensor data and sends it to Firebase.</li>
+                        <li><code>loop()</code>: Main loop handling sensor readings, display updates, and Firebase
+                            communication.</li>
+                        <li><code>displayDateTimeTempHumidity()</code>: Manages the OLED display for showing date, time,
+                            and environmental data.</li>
+                        <li><code>holidayMode()</code>: Activates special alert and monitoring mode.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">Function Descriptions</h2>
+                <div class="content">
+                    <ul>
+                        <li><strong class="has-text-danger">setup()</strong>: Establishes serial communication, WiFi connection, and initializes
+                            all sensors and Firebase.</li>
+                        <li><strong class="has-text-danger">sendDataToFirebase()</strong>: Formats and sends environmental data to Firebase.
+                        </li>
+                        <li><strong class="has-text-danger">loop()</strong>: Regularly checks for sensor updates and controls the display and
+                            Firebase data upload.</li>
+                        <li><strong class="has-text-danger">displayDateTimeTempHumidity()</strong>: Updates the OLED display with the current
+                            time, date, and environmental readings (smart watches).</li>
+                        <li><strong class="has-text-danger">holidayMode()</strong>: Monitors the PIR sensor and alters system behavior based on
+                            Firebase's 'holidayMode' status.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">Usage Instructions</h2>
+                <div class="content">
+                    <ol >
+                        <li>Power up the Arduino MKR IoT Carrier 2.</li>
+                        <li>Ensure it's connected to the WiFi network.</li>
+                        <li>Observe the sensor readings on the Firebase database or Ionic app.</li>
+                        <li>Access the Firebase console to view real-time data.</li>
+                        <li>Access Ionic app to view real-time data.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">Troubleshooting</h2>
+                <div class="content">
+                    <ul>
+                        <li><strong class="has-text-danger">WiFi Connectivity Issues</strong>: Ensure the WiFi credentials are correct and the
+                            network is stable.</li>
+                        <li><strong class="has-text-danger">Firebase Communication Errors</strong>: Verify Firebase secret and host if it's
+                            correct.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-white">Documentation</h2>
+                <div class="content">
+                    <p>Helpful Resources and Troubleshooting Guides which helped me in bad situations</p>
+                    <ul>
+                        <li><a class="has-text-warning" href="https://docs.arduino.cc/tutorials/mkr-iot-carrier-rev2/cheat-sheet">Cheat sheet for
+                                MKR IoT Carrier Rev2</a>: Provides a quick reference for using the MKR IoT Carrier Rev2.
+                        </li>
+                        <li><a class="has-text-warning" href="https://javl.github.io/image2cpp/">Image Convertor Tool</a>: Useful for converting
+                            images into formats compatible with Arduino displays.</li>
+                        <li><a class="has-text-warning"
+                                href="https://electronics.stackexchange.com/questions/30981/reducing-the-sensitivity-of-a-pir-sensor">Reducing
+                                the Sensitivity of a PIR Sensor</a>: Offers insights into adjusting the sensitivity of
+                            PIR sensors.</li>
+                        <li><a class="has-text-warning"
+                                href="https://forum.arduino.cc/t/pir-sensor-output-toggled-always-even-noone-near-to-sensor/996894/8">Troubleshooting
+                                PIR Sensor Output Issues</a>: Discussion on Arduino Forum about resolving erratic PIR
+                            sensor outputs.</li>
+                        <li><a class="has-text-warning"
+                                href="https://support.arduino.cc/hc/en-us/articles/4403050020114-Troubleshooting-PIR-Sensor-and-sensitivity-adjustments">Adjusting
+                                PIR Sensor Sensitivity on Arduino</a>: Official guide on calibrating PIR sensors.</li>
+                        <li><a class="has-text-warning" href="https://www.cytron.io/tutorial/send-data-to-firebase-using-arduino-uno-wifi-rev2">Sending
+                                Data to Firebase using Arduino Uno WiFi Rev2</a>: A tutorial on setting up Firebase
+                            connectivity.</li>
+                        <li><a class="has-text-warning"
+                                href="https://stackoverflow.com/questions/50543488/arduinojson-h-no-such-file-or-directory-arduino">Resolving
+                                'ArduinoJson.h No Such File or Directory' Error</a>: A StackOverflow discussion that
+                            helped fix library inclusion errors.</li>
+                        <li><a class="has-text-warning"
+                                href="https://rashm1n.medium.com/arduino-to-android-real-time-communication-for-iot-with-firebase-60df579f962">Real-Time
+                                Arduino to Android Communication with Firebase</a>: A Medium article on establishing a
+                            communication link between Arduino and Android apps via Firebase.</li>
+                        <li><a class="has-text-warning"
+                                href="https://forum.arduino.cc/t/port-monitor-error-command-open-failed-invalid-serial-port-could-not-connect-to-com-serial-port/1127713">Solving
+                                Port Monitor Error on Arduino</a>: A forum thread that helped address issues related to
+                            serial port connections.</li>
+                        <li><a class="has-text-warning" href="https://forum.arduino.cc/t/failed-uploading-uploading-error-exit-status-1/1177663">Fixing
+                                Upload Errors on Arduino</a>: Useful for troubleshooting problems during sketch uploads.
+                        </li>
+                        <li><a class="has-text-warning"
+                                href="https://forum.arduino.cc/t/can-no-longer-upload-sketch-to-board-no-device-found-on-ttyacm0/690382">Resolving
+                                'No Device Found on ttyACM0'</a>: A discussion on how to fix device recognition issues,
+                            especially on Linux-based systems.</li>
+                        <li><a class="has-text-warning"
+                                href="https://forum.arduino.cc/t/need-help-interpreting-the-values-of-gas-resistor-and-volatile-organic-compounds-read-from-the-arduino-mkriotcarrier-library/1144148">Interpreting
+                                Gas Resistor and VOC Readings</a>: A thread for understanding and utilizing gas sensor
+                            readings.</li>
+                        <li><a class="has-text-warning"
+                                href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf">Bosch
+                                BME688 Datasheet</a>: The datasheet for the BME688 sensor, providing detailed
+                            specifications.</li>
+                        <li><a class="has-text-warning" href="https://forum.arduino.cc/t/a-code-for-mkr-iot-carrier-rev2-please-help/1109215">Coding
+                                Help for MKR IoT Carrier Rev2</a>: Discussing coding challenges and solutions.</li>
+                        <li><a class="has-text-warning" href="https://forum.arduino.cc/t/mkr-iot-carrier-rev2-os-operating-system/1106706"> An
+                                innovative project presenting an operating system concept for the MKR IoT Carrier
+                                Rev2.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+    </section>
+</body>
+
+</html>
