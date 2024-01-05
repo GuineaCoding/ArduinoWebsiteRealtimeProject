@@ -364,3 +364,7 @@ font-size: 30px !important;
 .mainLogo {
   max-width: 1.75rem;
 }
+
+.container, .column {
+  padding: 0 15px; /* Adjust as necessary */
+}
