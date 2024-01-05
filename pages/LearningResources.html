@@ -11,6 +11,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
     <link rel="stylesheet" type="text/css" href="../css/arduino.css" />
+    <link rel="stylesheet" type="text/css" href="../css/learning-resources.css" />
     <script src="https://kit.fontawesome.com/2828f7885a.js"
         integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
         crossorigin="anonymous"></script>
@@ -25,7 +26,7 @@
             <div class="container is-fluid">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="#">
-                        <img class="image" src="../images/appLogo.png" alt="" width="96px">
+                        <img class="image mainLogo" src="../images/appLogo.png" alt="" width="96px">
                     </a>
                     <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
                         <span aria-hidden="true"></span>
@@ -36,9 +37,8 @@
                 <div class="navbar-menu">
                     <div class="navbar-start">
                         <a class="navbar-item"href="../index.html">Home</a>
-                        <a class="navbar-item" href="pages/arduino.html">Arduino Info Doc</a>
-                        <a class="navbar-item" href="#">Services</a>
-                        <a class="navbar-item" href="#">Testimonials</a>
+                        <a class="navbar-item" href="../pages/arduino.html">Arduino Repository Info Doc</a>
+                        <a class="navbar-item" href="../pages/InstalationGuide.html">Instalation Info</a>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
 
         <section class="section">
             <div class="container">
-                <h2 style="text-align: center; font-size: 24px;">Ionic Learning Resources</h2>
+                <h2 class="textHeading" style="text-align: center; font-size: 24px;">Ionic Learning Resources</h2>
                 <div class="columns is-multiline">
 
                     <div class="column is-half-tablet is-one-third-desktop">
@@ -56,7 +56,10 @@
                     <div class="column is-half-tablet is-one-third-desktop">
                         <a class="has-text-warning" href="https://ionicframework.com/docs/angular/your-first-app" target="_blank">Your First Ionic App: Angular</a>
                     </div>
-                  
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://ionicframework.com/docs/angular/your-first-app/deploying-mobile" target="_blank">Build app steps</a>
+                    </div>
+
                     <div class="column is-half-tablet is-one-third-desktop">
                         <a class="has-text-warning" href="https://ionicframework.com/docs/vue/quickstart#build-your-way-with-typescript-or-javascript" target="_blank">Build your way with TypeScript or JavaScript</a>
                     </div>
@@ -124,7 +127,7 @@
 
         <section class="section">
             <div class="container">
-                <h2 style="text-align: center; font-size: 24px;">Firebase Learning Resources</h2>
+                <h2 class="textHeading" style="text-align: center; font-size: 24px;">Firebase Learning Resources</h2>
                 <div class="columns is-multiline">
 
                     <div class="column is-half-tablet is-one-third-desktop">
@@ -151,6 +154,74 @@
                         <a class="has-text-warning" href="https://ionicthemes.com/tutorials/getting-to-know-the-latest-firebase-9-update-and-features" target="_blank">Step by Step Ionic Tutorials</a>
                     </div>
                    
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="textHeading" style="text-align: center; font-size: 24px;">Helpful Resources and Troubleshooting Guides which helped me in bad situations</h2>
+                <div class="columns is-multiline">
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://docs.arduino.cc/tutorials/mkr-iot-carrier-rev2/cheat-sheet" target="_blank">Cheat sheet for MKR IoT Carrier Rev2: Provides a quick reference for using the MKR IoT Carrier Rev2.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://javl.github.io/image2cpp/" target="_blank">Image Convertor Tool: Useful for converting images into formats compatible with Arduino displays.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://electronics.stackexchange.com/questions/30981/reducing-the-sensitivity-of-a-pir-sensor" target="_blank">Reducing the Sensitivity of a PIR Sensor: Offers insights into adjusting the sensitivity of PIR sensors.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://forum.arduino.cc/t/pir-sensor-output-toggled-always-even-noone-near-to-sensor/996894/8" target="_blank">Troubleshooting PIR Sensor Output Issues: Discussion on Arduino Forum about resolving erratic PIR sensor outputs.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://support.arduino.cc/hc/en-us/articles/4403050020114-Troubleshooting-PIR-Sensor-and-sensitivity-adjustments" target="_blank">Adjusting PIR Sensor Sensitivity on Arduino: Official guide on calibrating PIR sensors.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://www.cytron.io/tutorial/send-data-to-firebase-using-arduino-uno-wifi-rev2" target="_blank">Sending Data to Firebase using Arduino Uno WiFi Rev2: A tutorial on setting up Firebase connectivity.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://stackoverflow.com/questions/50543488/arduinojson-h-no-such-file-or-directory-arduino" target="_blank">Resolving 'ArduinoJson.h No Such File or Directory' Error: A StackOverflow discussion that helped fix library inclusion errors.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://rashm1n.medium.com/arduino-to-android-real-time-communication-for-iot-with-firebase-60df579f962" target="_blank">Real-Time Arduino to Android Communication with Firebase: A Medium article on establishing a communication link between Arduino and Android apps via Firebase.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://forum.arduino.cc/t/port-monitor-error-command-open-failed-invalid-serial-port-could-not-connect-to-com-serial-port/1127713" target="_blank">Solving Port Monitor Error on Arduino: A forum thread that helped address issues related to serial port connections.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://forum.arduino.cc/t/failed-uploading-uploading-error-exit-status-1/1177663" target="_blank">Fixing Upload Errors on Arduino: Useful for troubleshooting problems during sketch uploads.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://forum.arduino.cc/t/can-no-longer-upload-sketch-to-board-no-device-found-on-ttyacm0/690382" target="_blank">Resolving 'No Device Found on ttyACM0': A discussion on how to fix device recognition issues, especially on Linux-based systems.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://forum.arduino.cc/t/need-help-interpreting-the-values-of-gas-resistor-and-volatile-organic-compounds-read-from-the-arduino-mkriotcarrier-library/1144148" target="_blank">Interpreting Gas Resistor and VOC Readings: A thread for understanding and utilizing gas sensor readings.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme688-ds000.pdf" target="_blank">Bosch BME688 Datasheet: The datasheet for the BME688 sensor, providing detailed specifications.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://forum.arduino.cc/t/a-code-for-mkr-iot-carrier-rev2-please-help/1109215" target="_blank">Coding Help for MKR IoT Carrier Rev2: Discussing coding challenges and solutions.</a>
+                    </div>
+    
+                    <div class="column is-half-tablet is-one-third-desktop">
+                        <a class="has-text-warning" href="https://forum.arduino.cc/t/mkr-iot-carrier-rev2-os-operating-system/1106706" target="_blank">An innovative project presenting an operating system concept for the MKR IoT Carrier Rev2.</a>
+                    </div>
+    
+                </div>
             </div>
         </section>
         

@@ -25,7 +25,7 @@
             <div class="container is-fluid">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="#">
-                        <img class="image" src="../images/appLogo.png" alt="" width="96px">
+                        <img class="image mainLogo" src="../images/appLogo.png" alt="" width="96px">
                     </a>
                     <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
                         <span aria-hidden="true"></span>
@@ -36,17 +36,100 @@
                 <div class="navbar-menu">
                     <div class="navbar-start">
                         <a class="navbar-item"href="../index.html">Home</a>
-                        <a class="navbar-item" href="pages/arduino.html">Arduino Info Doc</a>
-                        <a class="navbar-item" href="pages/LearningResources.html">Learning Resources</a>
-                        <a class="navbar-item" href="#">Services</a>
-                        <a class="navbar-item" href="#">Testimonials</a>
+                        <a class="navbar-item" href="../pages/arduino.html">Arduino Repository Info Doc </a>
+                        <a class="navbar-item" href="../pages/LearningResources.html">Learning Resources</a>
                     </div>
                 </div>
             </div>
         </nav>
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-4 has-text-warning">Project Installation Process</h2>
+                    <p>Hello, here is the project installation process. Here is what I used so far:</p>
+                    <ul dir="auto">
+                        <li><a class="has-text-success" href="https://store.arduino.cc/products/explore-iot-kit-rev2" rel="nofollow">Arduino MKR IoT Carrier Rev2</a></li>
+                        <li><a class="has-text-success" href="https://firebase.google.com/" rel="nofollow">Firebase</a></li>
+                        <li><a class="has-text-success" href="https://nodejs.org/en" rel="nofollow">Node.js V 20.10.0</a></li>
+                        <li><a class="has-text-success" href="https://ionicframework.com/" rel="nofollow">Ionic Framework</a></li>
+                        <li><a class="has-text-success" href="https://developer.android.com/studio" rel="nofollow">Android Studio</a></li>
+                        <li><a class="has-text-success" href="https://www.chartjs.org/" rel="nofollow">Chart.js</a></li>
+                        <li>Feel free to check the project's package.json for other apps, but the main ones I already listed</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-4 has-text-warning">Setting Up Your Firebase Database</h2>
+                    <p>To get started, you'll need to create a Firebase database. Here's what you need to know:</p>
+                    <ul>
+                        <li>Head over to the <a class="has-text-success"  href="https://firebase.google.com/" rel="nofollow">Firebase website</a> and sign up or log in.</li>
+                        <li>Once you're in the Firebase console, create a new project.</li>
+                        <li>During the setup process, it's important to specifically choose the 'Web App' option to ensure compatibility with the project.</li>
+                        <li>Follow the on-screen instructions to complete the setup.</li>
+                    </ul>
+                   <img src="https://static.wixstatic.com/media/b87a25_e66f3ac91dac40d3aad9419b4b3aabab~mv2.png">
+                </div>
+            </div>
+        </section>
+        
 
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-4 has-text-warning">Installation Process of the Ionic Project</h2>
+                    <p>Let's proceed with the installation process of the Ionic project. I recommend watching the video first:</p>
+                    
+                    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/gjC5ZuaqIGs?si=WCUlE6P15NMRLwtp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <h3 class="title is-5 mt-5 has-text-warning">Clone and Install the Project:</h3>
+                    <ol>
+                        <li>Clone the project from <a href="https://github.com/GuineaCoding/ArduinoDevProject.git"> GitHub</a> to your local machine.</li>
+                        <li>Open a terminal or command prompt in the project directory.</li>
+                        <li>Run <code>npm install</code> to install all required dependencies.</li>
+                        <li>Create the environments folder in the src folder.</li>
+                        <li>In the environments folder, create the environment.ts file and place the Firebase keys there.</li>
+                    </ol>
+                    <img src="https://static.wixstatic.com/media/b87a25_130596f8075a4401b12ac19320464b01~mv2.jpg">
+        
+                    <h3 class="title is-5 has-text-warning">Run the Ionic App:</h3>
+                    <p>Within the project directory, run <code>ionic serve</code> to start the app in development mode. Open your web browser and navigate to <a href="http://localhost:8100">http://localhost:8100</a> to view the app.</p>
+                    <p><strong class="has-text-danger">Important:</strong> Due to a misconfiguration issue between the latest version of AngularFire and Ionic, an error may occur. This can be fixed by following the advice in <a href="https://github.com/angular/angularfire/issues/3255">this GitHub issue</a>.</p>
+                    <img src="https://static.wixstatic.com/media/b87a25_238d332d27f440a280b7fec73576624f~mv2.png">
+                    <img src="https://static.wixstatic.com/media/b87a25_70bdedb3041647a0b9478b99785799f8~mv2.png">
+                    <h3 class="title is-5 has-text-warning">Building the Ionic App:</h3>
+                    <p> For Android APK, ensure you have Android Studio installed and then follow Ionic's instructions from article to create the android folder <a href="https://ionicframework.com/docs/angular/your-first-app/deploying-mobile">Link here</a>   Run <code>ionic build</code> to build the app for production.</p>
+        
+                    <p><strong class="has-text-danger">Note:</strong> Ensure that your Firebase project settings and configuration are correctly integrated into the Ionic app. This includes updating the Firebase configuration in the appropriate files within the Ionic project.</p>
+                </div>
+            </div>
+        </section>
 
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-4 has-text-warning">Setting Up the Arduino Project</h2>
+                    <p>To get started with the Arduino code in the IDE, you'll first need to clone the project repository. Here's how:</p>
+                    <ol>
+                        <li>Make a Git clone of the project from <a href="https://github.com/GuineaCoding/ArduinoRealTimeProject.git" rel="nofollow">GitHub</a>.</li>
+                        <li>After cloning, you'll need to create a <code>config.h</code> file in your project directory.</li>
+                        <li>In the <code>config.h</code> file, add your WiFi name, WiFi password, Firebase host, and Firebase secret.</li>
+                    </ol>
+                    <p>Here's a screenshot to show you how it looks on my end:</p>
+                    <!-- Placeholder for screenshot -->
+                    <figure class="image is-4by3">
+                        <img src="https://static.wixstatic.com/media/b87a25_7a20b4ab88634360b47128a0c35a71d3~mv2.jpg" alt="config.h file screenshot">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
     </section>
 </body>
 

@@ -284,6 +284,10 @@ html {
   color: whitesmoke;
 }
 
+nav {
+  background-color: #fffaa8 !important;
+}
+
 .fa-download {
   color: #43485c;
 }
@@ -350,3 +354,13 @@ body.preloader-site {
 
 .white
 {color:ghostwhite}
+
+.textHeading {
+margin: 40px;
+font-size: 30px !important;
+  font-weight: bold !important;
+}
+
+.mainLogo {
+  max-width: 1.75rem;
+}
